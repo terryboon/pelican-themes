@@ -204,8 +204,9 @@ markdown, `:Menulabel:` in rst).
 
 You can show a short blurb of text about yourself and a picture. The following two settings are used for this:
 
-* Your 'About Me' paragraph will be whatever the `ABOUT_ME` variable is set to (raw html is allowed)
-* Your avatar can be set by pointing the `AVATAR` variable to the relevant picture (e.g. 'images/profile.png')
+* Your 'About Me' paragraph will be whatever the `ABOUT_ME` variable is set to.
+Raw html is expected. It is suggested that the title is wrapped in an <h4> element and that the blurb text is wrapped in a <p> element.
+* Your avatar can be set by pointing the `AVATAR` variable to the relevant picture (e.g. '/images/profile.png')
 
 ### Banner Image
 

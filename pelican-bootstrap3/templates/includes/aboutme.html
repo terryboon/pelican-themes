@@ -1,13 +1,10 @@
-<div id="aboutme">
-    {% if AVATAR %}
-        <p>
+<section class="well well-sm">
+    <div id="aboutme">
+        {% if AVATAR %}
             <img width="100%" class="img-thumbnail" src="{{ AVATAR }}"/>
-        </p>
-    {% endif %}
-    {% if ABOUT_ME %}
-    <p>
-        <strong>About {{ AUTHOR }}</strong><br/>
-        {{ ABOUT_ME }}
-    </p>
-    {% endif %}
-</div>
+        {% endif %}
+        {% if ABOUT_ME %}
+            {{ ABOUT_ME }}
+        {% endif %}
+    </div>
+</section>
