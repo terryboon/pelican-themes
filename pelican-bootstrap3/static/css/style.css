@@ -58,6 +58,11 @@ body {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    font-size: 12px;
+}
+
+#sidebar h4 {
+    font-weight: bold;
 }
 
 #sidebar a {
