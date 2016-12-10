@@ -348,6 +348,19 @@ Originally developed for including certification marks in your sidebar. E.g.,
 
 http://dmark.github.io
 
+### Cookie Consent
+
+The theme integrates the use of [Cookie Consent](https://silktide.com/tools/cookie-consent/) to display a banner supporting compliance with data protection rules.
+
+* To choose to display the Cookie Consent, set `USE_COOKIE_CONSENT` to `True`. You can configure its behaviour with the following settings:
+* `COOKIE_CONSENT_MESSAGE`: The message shown by the plugin (default: ‘This website uses cookies to ensure you get the best experience on our website’)
+* `COOKIE_CONSENT_DISMISS`: The text used on the dismiss button (default: "Got it!")
+* `COOKIE_CONSENT_LEARN_MORE`: The text shown on the link to the cookie policy (requires the link option to also be set) (default: ‘More info’)
+* `COOKIE_CONSENT_LINK`: The url of your cookie policy. If it’s set to null, the link is hidden. (default: null)
+* `COOKIE_CONSENT_THEME`: The theme you wish to use. Can be any of the themes from the style directory, e.g. "dark-top". If you wish to use your own CSS instead, specify the URL of your CSS file. e.g. styles/my_custom_theme.css. This can be a relative or absolute URL. (default: ‘light-floating’)
+* `COOKIE_CONSENT_PATH`: The path for the consent cookie that Cookie Consent uses, to remember that users have consented to cookies. Use to limit consent to a specific path within your website. (default: ‘/’)
+* `COOKIE_CONSENT_DOMAIN`: The domain for the consent cookie that Cookie Consent uses, to remember that users have consented to cookies. Useful if your website uses multiple subdomains, e.g. if your script is hosted at www.example.com you might override this to example.com, thereby allowing the same consent cookie to be read by subdomains like foo.example.com. (default: The current subdomain)
+
 ## Live example
 
 [This is the website of the original author](http://dandydev.net)
