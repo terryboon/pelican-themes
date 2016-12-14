@@ -263,12 +263,19 @@ You can optionally declare a [Creative Commons license](https://creativecommons.
 
 The license choice mirrors the [Creative Commons License Chooser](https://creativecommons.org/choose/). Source for the macro that renders the mark is at http://github.com/hlapp/cc-tools.
 
-Alternatively, if you want to use another license type, you can instead use the `CUSTOM_LICENSE` property to set a license string that will be showed at the bottom of every page.
+If you want to use another license type, or provide additional information to be displayed with the Creative Commons license,
+you can use the `CUSTOM_LICENSE` property to set a license string that will be showed at the bottom of every page.
 Raw HTML is allowed.
-As `CC_*` variables take precedence, be sure to avoid `CC_*` variables when using `CUSTOM_LICENSE`.
+The license based on the `CC_*` variables is displayed first, followed by `CUSTOM_LICENSE`, so be sure to avoid inconsistency.
 
 For example, if you want to use the WTFPL license, you can set:
 `CUSTOM_LICENSE='Unless otherwise stated, all articles are published under the <a href="http://www.wtfpl.net/about/">WTFPL</a> license.'`
+
+### Footer credits
+
+The bottom of each page displays credits after the license information. You can specify custom credits information by
+setting the `CREDITS` variable. The text in this variable will be wrapped in a <p> tag. If the `CREDITS` variable is not specified,
+the credits message defaults to "Powered by pelican-bootstrap3, Pelican, Bootstrap."
 
 ### GitHub
 
